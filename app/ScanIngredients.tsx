@@ -72,11 +72,12 @@ export default function IngredientChecklist() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, marginTop: 50 },
-  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 10 },
+  container: { flex: 1, padding: 20,  backgroundColor: '#FFF8F0' },
+  title: { fontSize: 24, fontWeight: 'bold', marginTop: 100 },
   inputRow: {
     flexDirection: 'row',
     marginBottom: 20,
+     marginTop:20,
   },
   input: {
     flex: 1,
@@ -101,6 +102,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginVertical: 8,
+    marginTop:20,
   },
   checkmark: {
     fontSize: 24,
