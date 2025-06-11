@@ -1,15 +1,12 @@
-import { Text, View } from "react-native";
+import React from 'react';
+import HomeScreen from './HomeScreen';
+import SplashScreen from './SplashSceen';
 
-export default function Index() {
+
+export default function App() {
+  const[isLoading, setIsLoading] = React.useState<boolean>(true);
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+  isLoading ? <SplashScreen setIsLoading={setIsLoading}/> : <HomeScreen/>
   );
 }
+
